@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last of Us - Série</title> <!-- nome que vai aparece na aba do navegador-->
+    
+    <!--pegando fonte Poppins do google fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!--lincando os arquivos css ao html-->
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+</head>
+<body>
+    <!--criando a classe main dentro da main vai 2 div e um asid-->
+    <main>
+        <!--Criando carrossel e trazendo as imagens do projeto-->
+        <div class="carrossel">
+            <!--1º imagen com duas classe imagem e ativa as demais com uma classe-->
+            <img class="imagem ativa" src="./src/imagens/tlou-1.jpg" alt="Ellie e Joel abraçados">
+
+            <img class="imagem" src="./src/imagens/tlou-2.jpg" alt="Personagens The Last of Us">
+
+            <img class="imagem" src="./src/imagens/tlou-3.jpg" alt="Joel olhando pela janela">
+
+            <img class="imagem" src="./src/imagens/tlou-4.jpg" alt="Ellie e tess se olhando">
+
+            <img class="imagem" src="./src/imagens/tlou-5.jpg" alt="Ellie e Joel caminhando em uma
+            cidade destruida">
+
+            <img class="imagem" src="./src/imagens/tlou-6.jpg" alt="Joel segurando uma lanterna ligada na mao direita">
+            <!--fim da primeira div-->
+        </div>
+        <!--inicio da 2º div contendo logo e o texto do projeto-->
+        <div class="conteudo">
+            <div class="informacoes">
+                <!--Adicionando a imagens da logo-->
+                <img class="logo" src="./src/imagens/logo.png" alt="logo The Last of Us">
+                <!--paragrafo descrição do projeto-->
+                <p class="descricao">
+                    The Last of Us é uma série distópica da HBO baseada na franquia de jogos de videogame de mesmo nome criada por Neil Druckmann. O drama narra um futuro pandêmico que foi devastador para humanidade, deixando os seres humanos à beira da extinção.
+                </p>
+            
+            </div>
+            <!-- div_class="conteudo" criando os botões dentro da div conteudo-->
+            <div class="botoes-carrossel"><!--Class e um atributo-->
+                <!--botão com duas classe botao e selecionado-->
+                <button class="botao selecionado"></button>
+                <button class="botao"></button>
+                <button class="botao"></button>
+                <button class="botao"></button>
+                <button class="botao"></button>
+                <button class="botao"></button>
+
+            </div>
+        <!--fim da 2º div-->
+        </div>
+        <!--inicio do meu lateral com os icones do gitHub e Linkedin-->
+        <aside class="menu-lateral">
+            <!--usado a teg ul para cria uma lista desordenada-->
+            <ul>
+                <!--usando <li> que faz parte da tag <ul> sempre que abrir <ul> acompanha a <li>-->
+                <li>
+                    <a href="https://github.com/Djohnn" target="_blank">
+
+                        <img src="./src/imagens/github.svg" alt="icone github" class="icon">
+
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/johnn-de-oliveira-785359215/" target="_blank">
+
+                        <img src="./src/imagens/linkedin-in.svg" alt="icone Linkedin" class="icon">
+
+                    </a>
+                </li>
+                
+            </ul>
+        </aside>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
